@@ -1,0 +1,22 @@
+<?php 
+declare(strict_types = 1);
+
+session_start();
+
+require_once('database/connection.db.php');
+require_once('database/Restaurant.class.php');
+
+require_once('templates/common.tpl.php');
+include_once('templates/Restaurant.tpl.php');
+
+require_once('utils/session.php');
+$session = new Session();
+
+$db = getDatabaseConnection();
+
+drawHeader($session);
+
+drawEditRestaurantForm(intval($_GET['idRestaurant']), $db);
+
+drawFooter();
+?>
