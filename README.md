@@ -1,2 +1,2 @@
-# feup-ltw-2122
-FEUP LTW 21/22
+# FEUP LTW 21/22
+FEUP LTW repository 21/22
